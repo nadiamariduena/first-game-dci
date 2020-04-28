@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/3.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  /* ---- */
+  position: relative;
+  overflow: hidden;
+  /* ------------------------------------ */
+  /* ------------------------------------ */
+  /* ------------------------------------ */
+  /* ------------------------------------ */
+  /* ------------------------------------ */
+  /* ------------------------------------ */
+  /* --------------------------------------- */
+  /* ------------------------------ */
+  /* ------------------------------ */
+}
+body header {
+  /* border: 1px solid #000; */
+  width: 15vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body header ul {
+  list-style: none;
+}
+body header ul li {
+  /* transform: rotate(-90deg);
+          margin-top: 100px; */
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #01660e;
+}
+body .mini {
+  position: absolute;
+  z-index: 1;
+  top: 14%;
+  left: 21%;
+  border: 1px solid #1814e7;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: white;
+  opacity: 0.5;
+  box-shadow: 5px 5px 100px 5px #1814e7;
+}
+body #pirateCross {
+  position: absolute;
+  top: 70%;
+  left: 42%;
+  border: 1px solid #e71414;
+  padding: 20px 20px;
+  border-radius: 100%;
+  background-color: white;
+  opacity: 0.5;
+  /* transform: translateY(0px); */
+  animation: float 6s ease-in-out infinite;
+}
+body #pirateCross::before {
+  content: "click";
+  color: red;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  top: 10px;
+  left: 37px;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px #e71414;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px #e71414;
+    transform: translateY(0px);
+  }
+}
+body #animBottle {
+  position: absolute;
+  top: 17%;
+  right: 32%;
+  opacity: 0;
+  border: 2px solid #ffe449;
+  padding: 20px 20px;
+  border-radius: 100%;
+  background-color: white;
+  animation: bottleAppear 6s ease-in-out infinite;
+}
+@keyframes bottleAppear {
+  0% {
+    box-shadow: 0 5px 15px 0px #ffe449;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    box-shadow: 0 10px 25px 0px #ffe449;
+    transform: translateY(0px);
+  }
+}
+body #animBottle.fade {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=styles.css.map */
